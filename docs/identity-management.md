@@ -248,7 +248,7 @@ Where `<user>` and `<password>` match the values defined in the `docker-compose`
 SQL commands can then be entered from the command-line. e.g.:
 
 ```SQL
-select id, username, email, password from user;
+-select id, username, email, password from user;
 ```
 
 The **Keyrock** MySQL database deals with all aspects of application security including storing users, passwords etc;
@@ -852,7 +852,7 @@ The response returns the details of the organization.
 
 ### List all Organizations
 
-Obtaining a complete list of all users is a super-admin permission requiring the `X-Auth-token` - most users will only
+Obtaining a complete list of all organizations is a super-admin permission requiring the `X-Auth-token` - most users will only
 be permitted to return users within their own organization. Listing users can be done by making a GET request to the
 `/v1/organizations` endpoint
 
